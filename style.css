@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+background: rgb(0, 0, 0); 
+min-height: 100vh;/*طول ارتفاع الشاشه*/   
+width: 100%;
+overflow: hidden;/*اي حاجه تحصل غلط تختفي*/
+position: relative;
+
+}
+header{
+display:flex ;
+justify-content:space-between;
+align-items: center;/*كده عشان اخليهم جمب بعض اللوجو و عناصر*/
+width: 80%;
+margin: auto;
+padding: 20px 0;
+}
+.logo{
+width: 40px;
+}
+ul li{/*align-items انا حطيت كده عشان اخلي لوجوا وعناصر الفوق تكون جمب بعض  فا هحطت فوق*/
+display:inline-block;    
+list-style: none;
+}
+ul li a{
+color: #fff;
+text-decoration: none;
+margin: 0 10px;/*ابعد الكلمات عن بعض*/  
+}
+
+.content{
+display: flex;   
+justify-content: space-between;
+align-items: center;/*عشان اخلي الكلام في نص جمب صورة*/
+width: 80%;
+margin: auto; /*عايزه اوسطهم*/
+color: #fff;
+}
+.content.text{
+width: 40%;  /*حطيت ارعين في الميه عشان الكلام يكون فا النص الا بقى الكلام هيطول للاخر*/  
+}
+.content,text h2{
+font-size: 40px;  
+text-transform: uppercase;  
+}
+.content .text p{
+font-size: 18px;
+margin: 20px 0;
+}
+.content .text a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.content.image{
+    width: 30%;
+}
+.content.image img{
+width: 180px;   
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+    transform: translate(-40%);/*وسطت الصور*/
+}
+.icons img{
+    width: 55px;
+    transition:0.5s;/*smoth تحريك صور*/
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: scale(1.2);/*انا عملت كده عشان كل ما اضغط على صوره تطلع بره يطلع ليها شكل حلو*/
+}
+
